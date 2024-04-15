@@ -1,0 +1,104 @@
+body{
+    font-family: 'poppins light';
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    color: whit
+}
+h1{
+    text-align: center;
+    color: white;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+div{
+    text-align: center;
+    float: center;
+    background-position: center center;
+}
+a{
+    background-color: rgb(90, 215, 237);
+    color: white;
+    text-decoration: none;
+    border-radius: 8%;
+    font-size: 20px;
+}
+.burbujas{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    opacity: 1;
+
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+
+    animation: burbujas 3s linear infinite;
+
+}
+.burbujas:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+.burbujas:nth-child(2){
+    width: 90px;
+    height: 90px;
+    left: 150%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbujas:nth-child(3){
+    width: 90px;
+    height: 90px;
+    left: 350%;
+    animation-duration: 3s;
+    animation-delay: 7s;
+}
+.burbujas:nth-child(5){
+    width: 90px;
+    height: 90px;
+    left: 550%;
+    animation-duration: 3s;
+    animation-delay: 9s;
+}
+.burbujas:nth-child(6){
+    width: 90px;
+    height: 90px;
+    left: 750%;
+    animation-duration: 3s;
+    animation-delay: 11s;
+}
+.burbujas:nth-child(7){
+    width: 90px;
+    height: 90px;
+    left: 950%;
+    animation-duration: 3s;
+    animation-delay: 13s;
+}
+.burbujas:nth-child(8){
+    width: 90px;
+    height: 90px;
+    left: 1150%;
+    animation-duration: 3s;
+    animation-delay: 15s;
+}
+
+@keyframes burbujas {
+ 0%{
+    bottom: 10px;
+    opacity: 0;
+ }
+ 50%{
+    opacity: .4;
+ }
+ 100%{
+    bottom: 100vh;
+    opacity: 0;
+ }
+}

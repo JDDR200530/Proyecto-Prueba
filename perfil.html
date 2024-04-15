@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="css/Inicio.css">
+</head>
+<body>
+     
+    <div id="Formulario"> 
+        <form method="post">
+            <h1>Inicio de Sesión</h1>
+            <br>
+            <div class="Usuario">
+                <label>Usuario</label>
+                <br>
+                <input class="Ingresar" type="text" id="NombreLogin" required>
+            </div>
+            <br>
+           
+            <input class="Iniciar" type="button" value="Iniciar" onclick="iniciarSesion()">   
+            <a class="Registrarse" href="registro.html">Registrar</a>
+            <div id="registrarse"></div>
+        </form>
+    </div>
+    <div class="bubbles"></div>
+    <div class="contenedor">
+        
+    </div>
+<script src="js/registrar.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const contenedorBurbujas = document.querySelector('.bubbles');
+    const NUMERO_BURBUJAS = 30;
+
+    for (let i = 0; i < NUMERO_BURBUJAS; i++) {
+        const span = document.createElement('span');
+        span.style.setProperty('--i', i + 1);
+        contenedorBurbujas.appendChild(span);
+    }
+});
+</script>
+</body>
+</html>

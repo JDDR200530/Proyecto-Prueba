@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro de Usuarios</title>
+        <link rel="stylesheet" href="css/registro.css">
+    </head>
+    <body>
+        <div id="Formulario">
+            <h1>Registro de Usuario</h1><br>
+            <div class = "Usuario">
+                <label for="nombre">Nombre del Usuario</label>
+                <br>
+                <input class="Ingresar" type="text" id="nombre" required>
+            </div>
+            <br>
+            <input class="Registrar" type="button" value="Registrar" onclick="registrarUsuario()">
+            <a class="Volver" href="perfil.html">Volver</a>
+        </div>
+        <div class="bubbles"></div>
+        <div class="contenedor">
+        <script src="js/registrar.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const contenedorBurbujas = document.querySelector('.bubbles');
+                const NUMERO_BURBUJAS = 30;
+            
+                for (let i = 0; i < NUMERO_BURBUJAS; i++) {
+                    const span = document.createElement('span');
+                    span.style.setProperty('--i', i + 1);
+                    contenedorBurbujas.appendChild(span);
+                }
+            });
+            </script>
+    </body>
+</html>
